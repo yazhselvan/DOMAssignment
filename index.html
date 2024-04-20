@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin-left: 20px;
+        }
+
+        .FieldHeaders{
+            font-family: sans-serif;
+            font-weight: bold;
+            margin-bottom: 0px;
+        }
+
+        .textBoxes{
+            height: 23px;
+            margin-right: 20px;
+            border: 1px solid lightgray;
+        }
+
+        .mandates{
+            color: red;
+        }
+
+        .FieldTexts{
+            font-size: 12px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-right: 176.44px;
+        }
+
+        .fieldDescribes{
+            margin-top: 0px;
+        }
+
+        input[name='email']{
+            width: 372.88px;
+        }
+
+        .checked{
+            color:orange;
+        }
+
+        .ratings{
+            margin-bottom: 10px;
+        }
+
+        .tableHeaders{
+            margin-right: 20px;
+        }
+
+        button{
+            margin-top: 10px;
+        }
+       
+        .address{
+            height: 50px;
+        }
+    </style>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div>
+    <p class="FieldHeaders">Name <span class = "mandates">*</span></p>
+    <input type="text" name="FirstName" class="textBoxes" id="firstName">
+    <input type="text" name="LastName" class="textBoxes" id="lastName">
+    <p class = "fieldDescribes">
+        <span class = "FieldTexts">First</span>
+        <span class = "FieldTexts">Last</span>
+    </p>
+    </div>
+    <div>
+        <p class="FieldHeaders">Email <span class = "mandates">*</span></p>
+        <input type="text" name="email" class="textBoxes" id="email">
+    </div>
+    <div>
+        <p class="FieldHeaders">Address <span class = "mandates">*</span></p>
+        <input type="text" name="email" class="textBoxes address" id="address">
+    </div>
+    <div>
+        <button onclick="address()">Submit</button>
+    </div>
+    
+</body>
+</html>
